@@ -1,0 +1,25 @@
+.fade-out {
+  opacity: 0;
+  @include transition($transition-fade);
+}
+.fade-in {
+  opacity: 1;
+  @include transition($transition-fade);
+}
+.fade-out-hover {
+  opacity: $opacity-100;
+  @include transition($transition-fade);
+  &:hover {
+    opacity: $opacity-80;
+  }
+}
+.fade-in-hover {
+  opacity: $opacity-80;
+  @include transition($transition-fade);
+  &:hover {
+    opacity: $opacity-100 !important;
+  }
+}
+.transition-all {
+  transition: $transition-all;
+}
